@@ -21,7 +21,7 @@ const renderModelChart = () => {
         }]
     }
     new Chart('modelschart', {type: 'line', data})
-    new Chart('modelschartTwo', {type: 'line', humity})
+    new Chart('modelschartTwo', {type: 'line', data: humity})
 }
 
 printCharts()
