@@ -7,8 +7,8 @@ const renderModelChart = () => {
     const data = {
         labels: ["13:00", "15:00", "17:00", '19:00', '21:00'],
         datasets: [{
-            label: "Niveles de lectura",
-            data: [10,11,30, 5, 19]
+            label: "Dioxido de carbonmo (ppm)",
+            data: [395,390,400, 420, 435]
 
         }]
     }
@@ -16,25 +16,25 @@ const renderModelChart = () => {
         labels: ["13:00", "15:00", "17:00", '19:00', '21:00'],
         datasets: [{
             label: "Niveles de humedad",
-            data: [13,15,20, 2, 1]
+            data: [78,76,74, 73, 75]
 
         }]
     }
     new Chart('modelschart', {type: 'line', data})
-    new Chart('modelschartTwo', {type: 'line', data})
+    new Chart('modelschartTwo', {type: 'line', humity})
 }
 
 printCharts()
 
 const area = ["13:00", "15:00", "17:00", '19:00', '21:00']
-const temperature = [19.4, 27.3, 50.9, 37.5, 12.1]
+const temperature = [26, 31, 27, 22, 20]
 
 const myChart = new Chart(ctx1, {
     type: "line",
     data: {
         labels: ["13:00", "15:00", "17:00", '19:00', '21:00'],
         datasets: [{
-            label: "temperatura",
+            label: "Temperatura",
             data: temperature,
             backgroundColor:[
                 "rgba(255, 99, 132, 0.2)",
